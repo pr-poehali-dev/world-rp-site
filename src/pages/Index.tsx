@@ -9,7 +9,7 @@ const Index = () => {
   const stats = [
     { value: '5000+', label: 'Игроков онлайн', icon: 'Users' },
     { value: '24/7', label: 'Работа сервера', icon: 'Clock' },
-    { value: '1000+', label: 'Уникальные работы', icon: 'Briefcase' },
+    { value: '5+', label: 'Уникальных работ', icon: 'Briefcase' },
     { value: '50+', label: 'Транспорта', icon: 'Car' },
   ];
 
