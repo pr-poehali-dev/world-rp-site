@@ -106,9 +106,11 @@ const Index = () => {
                   <Icon name="Play" size={20} className="mr-2" />
                   Начать играть
                 </Button>
-                <Button size="lg" variant="outline" className="text-lg px-8 py-6 border-2">
-                  <Icon name="MessageCircle" size={20} className="mr-2" />
-                  Discord
+                <Button size="lg" variant="outline" className="text-lg px-8 py-6 border-2" asChild>
+                  <a href="https://discord.gg/c2C7yZuWDZ" target="_blank" rel="noopener noreferrer">
+                    <Icon name="MessageCircle" size={20} className="mr-2" />
+                    Discord
+                  </a>
                 </Button>
               </div>
             </div>
@@ -222,14 +224,20 @@ const Index = () => {
             </div>
             
             <div className="flex gap-4">
-              {['MessageCircle', 'Youtube', 'Instagram'].map((social) => (
-                <button
-                  key={social}
-                  className="w-10 h-10 bg-muted hover:bg-primary rounded-lg flex items-center justify-center transition-colors group"
-                >
-                  <Icon name={social as any} size={20} className="text-muted-foreground group-hover:text-white" />
-                </button>
-              ))}
+              <a
+                href="https://discord.gg/c2C7yZuWDZ"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-10 h-10 bg-muted hover:bg-primary rounded-lg flex items-center justify-center transition-colors group"
+              >
+                <Icon name="MessageCircle" size={20} className="text-muted-foreground group-hover:text-white" />
+              </a>
+              <button className="w-10 h-10 bg-muted hover:bg-primary rounded-lg flex items-center justify-center transition-colors group">
+                <Icon name="Youtube" size={20} className="text-muted-foreground group-hover:text-white" />
+              </button>
+              <button className="w-10 h-10 bg-muted hover:bg-primary rounded-lg flex items-center justify-center transition-colors group">
+                <Icon name="Instagram" size={20} className="text-muted-foreground group-hover:text-white" />
+              </button>
             </div>
           </div>
         </div>
